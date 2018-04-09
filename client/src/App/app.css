@@ -1,0 +1,378 @@
+*{
+   box-sizing: border-box;
+   margin: 0;
+   
+}
+body{
+    background-color: rgb(32,60,69);
+}
+
+.outside{
+    background-image: url("./gearbraryshelfcut2.png");
+    height: 100vh;
+    /* margin-left:170px; */
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.content{
+    margin-left: 170px;
+}
+.navBarWrapper{
+    display: flex;
+    flex-direction: column;
+    
+    
+    position: fixed; 
+    height: 750px;
+    width: 170px;
+    
+    background-image: url("./middlebackground2.png");
+    background-size: 100% 100%;
+    
+}
+.top{
+    height:114px;
+}
+.top1{
+    height: 100px;
+    margin-left: 2px;
+    margin-right: 10px;
+}
+.empty2{
+    height: 133px;
+}
+.link3{
+    height: 55px;
+    margin-left: 2px;
+    margin-right: 10px;
+}
+.link4{
+    height:55px;
+    margin-left: 2px;
+    margin-right: 10px;
+}
+.navLink{
+    
+    
+}
+.navLink:hover{
+    background-color: rgba(118,63, 40, .6);
+    border-radius: 10px; 
+}
+
+.homeWrapper{
+    display: flex;
+    
+    padding-left: 100px;
+    justify-content: center;
+   padding-top:15%;
+   padding-right: 10%;
+    /* margin-left: 40%; */
+   
+} 
+
+
+
+.wrapper1{
+    display: grid;
+    grid-template-areas:
+        "tri"
+        "con";
+    color:   rgb(236,175,1)
+}
+.homeLink{
+    color: rgb(236,175,1);
+    
+    padding: 30px 40px 30px 40px;
+    margin-top: 20px;
+    background-color: rgba(0, 0 ,0, .6);
+    margin: 10px;
+    text-decoration: none; 
+    border: solid 2px rgb(236,175,1);
+}
+
+.tripTitle{
+    grid-area: tri;
+    background-color: rgba(0,0,0, .6);
+    color: rgb(236,175,1);
+}
+.trips{
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 3px black;
+    
+    
+    padding: 10px;   
+    background-color: rgba(105, 81, 15, 0.6);
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+    
+}
+.tripArray{
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    font-size: .8em;
+    
+}
+
+.con{
+    margin:5%;
+    grid-area: con;
+    background-color: rgba(66, 49, 2, 0.6);
+    color: white;
+    border: solid 2px black;
+
+}
+
+.l1{
+    margin-top: 30px;
+    border: solid 1px black;
+    grid-area: l1;
+    text-align: center;
+}
+.l2{
+    margin-bottom: 30px;
+    border: solid 1px black;
+    grid-area: l2;
+    text-align: center;
+
+
+}
+.l3{ 
+    margin-top: 30px;
+    border: solid 1px black;
+    grid-area: l3;
+    text-align: center;
+}
+.l4{
+    margin-bottom: 30px;
+    border: solid 1px black;
+    text-align: center;
+
+    grid-area: l4;
+}
+
+.itemTitle{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "it1 it2 it3 it4 .";
+    background-color: rgba(0, 0 ,0, .6);
+    color: rgb(236,175,1);
+}
+.it1{
+    grid-area: it1
+}
+.it2{
+    grid-area: it2
+}
+.it3{
+    grid-area: it3
+}
+.it4{
+    grid-area: it4
+}
+.itemsArray{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 200px;
+}
+
+.itemArray{
+    border: solid 1px black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "i1 i2 i3 i4 i5";
+    
+    
+
+
+    
+}
+.item1{
+    grid-area: i1;
+
+}
+.item2{
+    grid-area: i2;
+
+}
+.item3{
+    grid-area: i3;
+
+}
+.item4{
+    grid-area: i4;
+
+}
+.item5{
+    grid-area: i5;
+}
+
+
+.tripArray{
+    border: solid 1px black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "t1 t2 t3 t4 t5"
+    
+
+
+    
+}
+.trip1{
+    grid-area: t1;
+    position: inline-block;
+    
+
+}
+.tripInline{
+    display:inline-block;
+}
+
+.trip2{
+    grid-area: t2;
+
+}
+.trip3{
+    grid-area: t3;
+
+}
+.trip4{
+    grid-area: t4;
+
+}
+
+.tripTitle{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "tr1 tr2 tr3 ."
+}
+.tr1{
+    grid-area: tr1
+}
+.tr2{
+    grid-area: tr2
+}
+.tr3{
+    grid-area: tr3
+}
+
+.backdrop-style{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 25px;
+
+}
+.modal-style{
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 500px;
+    min-height: 300px;
+    margin: 0 auto;
+    position: relative;
+    left: 10px;
+
+}
+.linkTripList{
+    text-decoration: none;
+    color: white;
+    background: rgba(0, 0 ,0, .6);
+
+}
+.linkTripList:hover{
+    background-color: rgba(255,255,255, .6)
+}
+.individualTrip{
+    padding-top: 3%;
+    background-color: rgba(0, 0 ,0, .6);
+    color: rgb(172, 169, 162);
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.packListWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    
+}
+.pack{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.packListTitle{
+    text-align: center;
+    font-size: 2em;
+}
+
+.packList{
+   
+    width: 100%;
+    color: rgb(172, 169, 162);
+    background-color: rgba(85, 63, 3, 0.7);
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    border: solid 2px black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "pl1 pl2 pl3"
+    
+}
+.packListItem1{
+    /* border: solid 2px black; */
+    grid-area: pl1
+}
+.packListItem2{
+    /* border: solid 2px black; */
+    grid-area: pl2
+}
+.packListItem3{
+    /* border: solid 2px black; */
+    grid-area: pl3
+}
+.individualTrip{
+    
+    
+}
+
+.indTripTitle{
+    padding: 20px;
+    
+
+}
+.indTripName{
+    text-align: center;
+    color: white;
+    font-size: 4em;
+}
+
+.indTripContent{
+    text-align: center;
+    color: white;
+}
